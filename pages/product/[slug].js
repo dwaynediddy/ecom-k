@@ -21,14 +21,14 @@ const ProductDetails = ({ product, products }) => {
         <div className="product-detail-container">
             <div>
                 <div className="image-container">
-                    <img src={urlFor(image && image[index])} className="product-detail-image" alt='item'/>
+                    <img src={urlFor(image && image[index])} className="product-detail-image" alt='item' />
                 </div>
                 <div className="small-images-container">
                     {image?.map((item, i) => (
                         <img 
                             key={i}
                             alt='item'
-                            src={urlFor(item )}
+                            src={urlFor(item)}
                             className={i === index ? 'small-image selected-image' : 'small-image' }
                             onMouseEnter={() => setIndex(i)}
                         />
@@ -105,8 +105,6 @@ export const getStaticPaths = async () => {
       
       const product = await client.fetch(query)
       const products = await client.fetch(productsQuery)
-    
-      console.log(product)
     
       return {
         props: { products, product }

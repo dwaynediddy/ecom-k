@@ -12,6 +12,7 @@ const Product = ({ product: {image, name, slug, price} }) => {
             width={250} 
             height={250} 
             className="product-image"
+            key='image'
           />
           <p className="product-name">{name}</p>
           <p className="product-name">${price}</p>
