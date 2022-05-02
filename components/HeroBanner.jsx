@@ -14,7 +14,7 @@ const HeroBanner = ({ heroBanner }) => {
                 </Link>
                 <div className='desc'>
                     <h5>{heroBanner.desc}</h5>
-                    <p>{heroBanner.smallText}</p>
+                    {/* <p>{heroBanner.smallText}</p> */}
                 </div>
             </div>
         </div>
