@@ -249,7 +249,7 @@ text-align: end;
   /* top: -35%;
   left: 8%; */
   top: -30%;
-  left: 25%;
+  left: 30%;
 }
 .banner-desc .right{
   line-height: 1.4;
@@ -627,6 +627,7 @@ margin-top: 160px;
     height: 62%;
     top: -2%;
     right: -6%;
+    margin-top: 40px;
   }
   .footer-banner-container{
     height: 560px;
@@ -760,4 +761,20 @@ margin-top: 160px;
   width: 300px;
   margin: auto;
 }
+}
+
+@media screen and (max-width:400px) {
+  .hero-banner-image{
+    width: 70%;
+    height: 82%;
+    top: -2%;
+    right: -6%;
+    margin-top: 25px;
+  }
+  .footer-banner-container img {
+    display : none;
+  }
+  .footer-banner-container p { 
+    display: none;
+  }
 }
