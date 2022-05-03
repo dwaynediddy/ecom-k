@@ -1,7 +1,7 @@
 import {  Product, FooterBanner, HeroBanner } from '../components/index'
 import { client } from '../lib/client'
 
-export default function Home({products, bannerData}) {
+export default function Home({ products, bannerData }) {
   return (
     <div>
         <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
