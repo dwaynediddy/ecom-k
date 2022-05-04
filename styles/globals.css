@@ -67,7 +67,10 @@ width: 100%;
 .logo{
   color: gray;
   font-size: 18px;
-
+}
+.logo::first-letter{
+  color: #f02d34;
+  font-size: 18px;
 }
 .cart-icon{
   font-size: 25px;
